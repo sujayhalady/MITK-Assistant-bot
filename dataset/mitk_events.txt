@@ -1,0 +1,19 @@
+Title: MITK Events and Activities
+Category: events
+============================================================
+
+MITK EVENTS, FESTS AND STUDENT ACTIVITIES
+
+TECHNICAL EVENTS:
+• Cerebrox: AI & ML technical forum for seminars, workshops, and projects
+• Saavishkaar: Annual technical fest with project exhibitions and competitions
+
+CULTURAL EVENTS:
+• Mridula: Annual cultural fest with music, dance, and drama competitions
+
+STUDENT DEVELOPMENT:
+• Skill Development: Workshops on coding, robotics, IoT, AI
+
+STUDENT CLUBS:
+• Photography Club: Student photography club covering events
+• Robotics Club: Student club for building and testing robots

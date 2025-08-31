@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MITK AI Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🤖</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-top">
+                <div class="logo-section">
+                    <img src="mitk_logo_png.png" alt="MITK Logo" class="logo-img">
+                    <div class="header-text">
+                        <h1>MITK AI Assistant</h1>
+                        <p>Moodlakatte Institute of Technology, Kundapura</p>
+                    </div>
+                </div>
+                <div class="header-controls">
+                    <button id="languageToggle" class="btn btn--outline" title="Switch Language">
+                        English
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Chat Container -->
+        <main class="chat-container">
+            <div id="chatMessages" class="chat-messages">
+                <!-- Messages will be dynamically added here -->
+            </div>
+            
+            <!-- Typing Indicator -->
+            <div id="typingIndicator" class="typing-indicator hidden">
+                <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="typing-text">AI is thinking...</span>
+            </div>
+        </main>
+
+        <!-- New Chat FAB -->
+        <button id="newChatFab" class="fab-new-chat" title="Start New Conversation">
+            <span></span>
+            <span>New Chat</span>
+        </button>
+
+        <!-- Input Section -->
+        <section class="input-section">
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <textarea 
+                        id="messageInput" 
+                        placeholder="Ask me anything about MITK - admissions, courses, campus life, placements..." 
+                        rows="1" 
+                        maxlength="500"
+                        aria-label="Type your message"
+                    ></textarea>
+                    <div class="input-controls">
+                        <button id="sendBtn" class="send-btn" title="Send message" aria-label="Send message">
+                            📤
+                        </button>
+                    </div>
+                </div>
+                <div class="input-footer">
+                    <div class="char-counter">
+                        <span id="charCount">0/500</span>
+                    </div>
+                    <div class="status-text" id="statusText">
+                        🔄 Connecting...
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Confidence Modal -->
+    <div id="confidenceModal" class="modal hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Response Confidence</h3>
+                <button class="modal-close" aria-label="Close modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <!-- Content will be dynamically added -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>

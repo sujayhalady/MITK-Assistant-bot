@@ -1,0 +1,13 @@
+[
+  {
+    "id": "sample_001",
+    "course": "CSE",
+    "semester": 5,
+    "year": 2023,
+    "subject": "Data Structures",
+    "exam_type": "Regular",
+    "file_path": "/papers/CSE/5/2023/DS_Regular_2023.pdf",
+    "file_size": 1245760,
+    "created_at": "2024-01-15T10:00:00Z"
+  }
+]
